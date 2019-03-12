@@ -11,16 +11,17 @@ struct str{
 
 static struct str s_arr[4]; //The array is of type struct str
 
-void run_global_array(){
+void run_global_array()
+{
     printf("Running global array\n");
 
-    char data = 'a';
+    char character = 'a';
 
     for(int i = 0; i <  sizeof(s_arr) / sizeof(s_arr[0]); i++)
     {
         s_arr[i].a = i;
-        s_arr[i].c = data;
-        data++;
+        s_arr[i].c = character;
+        character++;
     }
 
     printf("Data in array:\n");

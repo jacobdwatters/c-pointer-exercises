@@ -5,7 +5,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void run_monolithic_array() {
+void run_monolithic_array()
+{
     printf("Running monolithic array\n");
 
     struct str{
